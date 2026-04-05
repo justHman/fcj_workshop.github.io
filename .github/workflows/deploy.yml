@@ -4,7 +4,10 @@ name: Deploy to GitHub Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["main", "master"]
+    paths:
+      - "**"
+      - ".github/workflows/deploy.yml"
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,6 +30,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,10 +40,15 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --no-audit --no-fund
 
       - name: Build
         run: npm run build
+
+      - name: Ensure build output exists
+        run: |
+          test -d dist
+          test -f dist/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
