@@ -1,64 +1,39 @@
-# Sharing and Feedback
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{% /notice %}}
 
-## 1. Feelings about the program
+> Here, you can freely share your personal opinions about your experience participating in the First Cloud Journey program. This will help the FCJ team improve any shortcomings based on the following aspects:
 
-The First Cloud AI Journey internship program has been an incredible learning experience. I felt challenged and supported throughout the 12 weeks. The combination of theoretical learning and hands-on projects helped solidify my understanding of AWS services. The mentorship from the AWS team was invaluable.
+### Overall Evaluation
 
----
+**1. Working Environment**  
+The working environment is very friendly and open. FCJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
 
-## 2. Satisfaction level
+**2. Support from Mentor / Team Admin**  
+The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
 
-I am highly satisfied with the program (9/10). The curriculum was well-structured, covering essential AWS services from basic to advanced levels. The weekly study sessions and community events enhanced the learning experience significantly. The only area for improvement would be more time for complex hands-on labs.
+**3. Relevance of Work to Academic Major**  
+The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
 
----
+**4. Learning & Skill Development Opportunities**  
+During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
 
-## 3. Knowledge gained
+**5. Company Culture & Team Spirit**  
+The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
 
-Throughout the program, I acquired deep knowledge in:
-
-- AWS core services (EC2, S3, Lambda, DynamoDB)
-- Infrastructure as Code using CDK and CloudFormation
-- Serverless architecture patterns
-- Security best practices with IAM
-- ML deployment using SageMaker
-
-This knowledge directly contributed to my workshop project.
-
----
-
-## 4. Skills improved
-
-Beyond technical skills, I improved my soft skills including:
-
-- Technical documentation writing
-- Presenting complex concepts clearly
-- Collaborating in a team environment
-- Time management across multiple tasks
-- Problem-solving under pressure
-
-These skills will be valuable throughout my career.
+**6. Internship Policies / Benefits**  
+The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
 
 ---
 
-## 5. Areas for improvement (for the program)
-
-Some suggestions for improving the program:
-
-1. More hands-on time for complex labs
-2. Earlier introduction to the workshop project requirements
-3. More 1-on-1 mentoring sessions
-4. Additional resources for Vietnamese documentation
-5. Peer review sessions for workshop content
+### Additional Questions
+- What did you find **most satisfying** during your internship?  
+- What do you think the company **should improve** for future interns?  
+- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
 
 ---
 
-## 6. Would you recommend the program to friends? Why?
-
-Absolutely, I would highly recommend the FCJ internship program to anyone interested in cloud computing. The program provides:
-
-- Real-world experience with AWS
-- Access to industry mentors
-- A supportive community
-- The opportunity to build a portfolio project
-
-It is an excellent launchpad for a career in cloud technology.
+### Suggestions & Expectations
+- Do you have any suggestions to improve the internship experience?  
+- Would you like to continue this program in the future?  
+- Any other comments (free sharing):

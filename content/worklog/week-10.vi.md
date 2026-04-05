@@ -1,60 +1,20 @@
-### Mục tiêu Tuần 10
+### Mục tiêu tuần 10:
 
-* Thực hiện load testing và stress testing.
-* Triển khai chiến lược tối ưu chi phí.
-* Chuẩn bị demo cho stakeholder presentation.
-* Bắt đầu viết technical documentation.
+* Hoàn thành đồng bộ dữ liệu chéo nhau giữa các API quét mã vạch (Barcode Pipelines).
+* Tối ưu hóa tối đa các chỉ số Token của LLM, theo dõi tốc độ phản hồi máy chủ và kiểm soát bảng giá dịch vụ API AI.
 
-### Các nhiệm vụ thực hiện trong tuần
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Mở rộng kiểm thử (Testing) cho cơ sở dữ liệu FDB bổ sung <br> - Đồng bộ Output định dạng Barcode cho 3 bộ Client liền lúc (USDA, OpenFoodFacts, FDB) | 09/03/2026   | 09/03/2026      |
+| 3   | - Thiết lập crawler thu thập dữ liệu (data cache) chống gọi request lặp lại <br> - Xử lý logic ghi Log của console trên Amazon ECS môi trường sau này `LOG_TO_FILE` | 10/03/2026   | 10/03/2026      |
+| 4   | - Thay máu toàn bộ cấu trúc câu lệnh Prompt gốc nhằm hạ thiểu Token-context bị ngốn vô ích <br> - Tinh chỉnh cơ chế hàm Clear tự động lọc rác text văn xuôi trước khi JSON decode | 11/03/2026   | 11/03/2026      |
+| 5   | - Bổ sung các biến thống kê đếm số lượng Token Input (đầu vào), Token Output (đầu ra), tính toán ra thẳng Số tiền USD và Tốc độ giây chạy của 1 request | 12/03/2026   | 12/03/2026      |
+| 6   | - Mang kinh nghiệm tối ưu Prompt ở luồng ảnh bình thường áp dụng mượt mà qua luồng đọc ảnh nhãn mác (Label Analysis) | 13/03/2026   | 13/03/2026      |
 
-| Ngày | Nhiệm vụ | Ngày BĐ | Ngày HT | Tài liệu tham khảo |
-| --- | --- | --- | --- | --- |
-| 1 | - Load Testing <br>&emsp; + Thiết lập Artillery.io cho load tests <br>&emsp; + Mô phỏng 100 concurrent users <br>&emsp; + Xác định bottlenecks trong API endpoints | 09/03/2026 | 09/03/2026 | [Load Test Reports] |
-| 2 | - Stress Testing <br>&emsp; + Tăng lên 500 concurrent users <br>&emsp; + Test Lambda scaling behavior <br>&emsp; + Xác minh DynamoDB auto-scaling | 10/03/2026 | 10/03/2026 | [Stress Test Reports] |
-| 3 | - Tối ưu chi phí <br>&emsp; + Phân tích dữ liệu AWS Cost Explorer <br>&emsp; + Triển khai Reserved Capacity cho DynamoDB <br>&emsp; + Thiết lập S3 Intelligent-Tiering | 11/03/2026 | 11/03/2026 | [Cost Analysis](https://docs.aws.amazon.com/cost-management/) |
-| 4 | - Chuẩn bị Demo <br>&emsp; + Tạo demo script và flow <br>&emsp; + Thiết lập demo data trong staging <br>&emsp; + Tập trình bày với team | 12/03/2026 | 12/03/2026 | [Demo Script] |
-| 5 | - Technical Documentation (Phần 1) <br>&emsp; + Bắt đầu viết architecture documentation <br>&emsp; + Tài liệu hóa API specifications <br>&emsp; + Tạo deployment guide | 13/03/2026 | 13/03/2026 | [Tech Docs] |
-| 6-7 | - Technical Documentation (Phần 2) <br>&emsp; + Viết developer setup guide <br>&emsp; + Tài liệu hóa troubleshooting steps <br>&emsp; + Tạo runbook cho operations | 14/03/2026 | 15/03/2026 | [Runbook] |
+### Kết quả đạt được tuần 10:
 
-### Thành tựu Tuần 10
-
-* **Load Testing:**
-  * Hệ thống xử lý 100 concurrent users với <200ms response time.
-  * Stress test cho thấy graceful degradation ở 500 users.
-  * Lambda auto-scaling kích hoạt ở 200 concurrent requests.
-
-* **Tối ưu chi phí:**
-  * Ước tính giảm 40% chi phí với các chiến lược tối ưu.
-  * S3 Intelligent-Tiering tiết kiệm ~$15/tháng cho dữ liệu ít truy cập.
-  * Bedrock usage được tối ưu với prompt caching.
-
-* **Demo:**
-  * Demo script hoàn chỉnh bao gồm tất cả tính năng NutriTrack.
-  * Môi trường staging được chuẩn bị với dữ liệu thực tế.
-  * Team rehearsal hoàn thành thành công.
-
-* **Tài liệu:**
-  * Architecture document với diagrams hoàn thành.
-  * API documentation với examples (Postman collection).
-  * Deployment và developer setup guides.
-
-### Khó khăn & Bài học
-
-* **Khó khăn:**
-  * Lambda concurrent execution limits gây ra lỗi 429 ở high load.
-  * Tối ưu chi phí yêu cầu hiểu các pricing models phức tạp.
-
-* **Cách giải quyết:**
-  * Yêu cầu tăng Lambda quota qua AWS Support.
-  * Sử dụng AWS Pricing Calculator để model các scenarios khác nhau.
-
-* **Bài học rút ra:**
-  * Luôn lên kế hoạch cho quota limits trong serverless architecture.
-  * Tối ưu chi phí nên được xem xét từ giai đoạn thiết kế.
-
-### Kế hoạch Tuần 11
-
-* Hoàn thành Workshop documentation cho báo cáo thực tập.
-* Chuẩn bị final presentation slides.
-* Thực hiện internal demo với mentors.
-* Hoàn thiện tất cả project documentation.
+* Giải quyết thành công rào cản đồng bộ dữ liệu trên diện rộng. Nhờ vậy, không cần biết Barcode bắn về từ kho dữ liệu nào trong 3 bộ Client (FDB, USDA, OpenFoodFacts), đầu ra backend luôn là một bản JSON định dạng khuôn mẫu tuyệt đối.
+* Áp dụng hàng loạt kỹ thuật nhồi/tiết chế token đỉnh cao giúp giảm hao phí lượng context dư thừa đi vào quá trình gọi Amazon Bedrock, vừa tăng tính rẻ đỏ (cost margin) vừa tăng vọt tốc độ phản hồi dữ liệu (low latency).
+* Viết thành công công cụ Crawl hỗ trợ Cache để giảm thiểu việc ping server ngoài liên tục tốn thời gian.
+* Ra mắt bộ thống kê đo độ tiêu hao toàn cục trên Backend, ghi lại rõ ràng bao nhiêu tiền, bao nhiêu tokens, chạy mất mấy giây khi mỗi tấm hình phân tích bay qua server.

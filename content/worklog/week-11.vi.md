@@ -1,60 +1,19 @@
-### Mục tiêu Tuần 11
+### Mục tiêu tuần 11:
 
-* Hoàn thành Workshop documentation cho báo cáo thực tập.
-* Chuẩn bị final presentation slides.
-* Thực hiện internal demo với mentors.
-* Hoàn thiện tất cả project documentation.
+* Đưa dự án tiến tới môi trường Production thực tế (Deploy lên hệ sinh thái trạm biên Fly.io).
+* Tự động hóa triệt để dây chuyền tích hợp phân phối mã nguồn (CI/CD) qua Github Actions.
 
-### Các nhiệm vụ thực hiện trong tuần
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Hiện thực hóa quy chuẩn Hạ tầng dưới dạng Code (IaC) thiết lập dựa vào Terraform <br> - Khởi tạo kịch bản `.yml` xây CI/CD tự động bằng Github Actions | 16/03/2026   | 16/03/2026      | GitHub Actions Docs |
+| 3   | - Quản lý và chặn rò rỉ mã Secret từ Github Action <br> - Code luồng tự động đẩy source qua các kịch bản lệnh SSH | 17/03/2026   | 17/03/2026      |
+| 4   | - Thực nghiệm thả cấu trúc backend chạy trên môi trường Edge Network của Fly.io | 18/03/2026   | 18/03/2026      | Fly.io documentation |
+| 5   | - Viết kịch bản truyền dẫn (SFTP) thu/phát cục Cache (upload/download) qua lại giữa Git Runner và Volume vật lý của Fly.io | 19/03/2026   | 19/03/2026      |
+| 6   | - Fix bug nghiêm trọng luồng CI/CD Fly.io: Máy ảo bị chết (die VM) sập bất thình lình trước khi tiến trình truyền Cache kịp kết thúc | 20/03/2026   | 20/03/2026      |
 
-| Ngày | Nhiệm vụ | Ngày BĐ | Ngày HT | Tài liệu tham khảo |
-| --- | --- | --- | --- | --- |
-| 1 | - Workshop Documentation (Phần 1) <br>&emsp; + Tạo workshop overview <br>&emsp; + Tài liệu hóa prerequisites <br>&emsp; + Viết architecture description | 16/03/2026 | 16/03/2026 | [Workshop Docs] |
-| 2 | - Workshop Documentation (Phần 2) <br>&emsp; + Viết step-by-step deployment guide <br>&emsp; + Thêm screenshots cho mỗi bước <br>&emsp; + Tạo code snippets cho IaC | 17/03/2026 | 17/03/2026 | [Workshop Docs] |
-| 3 | - Workshop Documentation (Phần 3) <br>&emsp; + Tài liệu hóa testing procedures <br>&emsp; + Thêm clean-up instructions <br>&emsp; + Tạo troubleshooting FAQ | 18/03/2026 | 18/03/2026 | [Workshop Docs] |
-| 4 | - Chuẩn bị Presentation <br>&emsp; + Tạo presentation deck 25 slides <br>&emsp; + Bao gồm architecture diagrams <br>&emsp; + Thêm demo video clips | 19/03/2026 | 19/03/2026 | [Presentation Slides] |
-| 5 | - Internal Demo <br>&emsp; + Trình bày cho FCJ mentors <br>&emsp; + Demo tất cả tính năng NutriTrack <br>&emsp; + Thu thập feedback để cải thiện | 20/03/2026 | 20/03/2026 | [Demo Feedback] |
-| 6-7 | - Hoàn thiện Documentation <br>&emsp; + Áp dụng mentor feedback <br>&emsp; + Đọc lại tất cả documentation <br>&emsp; + Cập nhật bilingual content | 21/03/2026 | 22/03/2026 | [Final Docs] |
+### Kết quả đạt được tuần 11:
 
-### Thành tựu Tuần 11
-
-* **Workshop Documentation:**
-  * Workshop hoàn chỉnh 4 phần (Overview, Setup, Implementation, Cleanup).
-  * 30+ screenshots với annotations.
-  * CloudFormation/SAM templates được bao gồm để reproducibility.
-
-* **Presentation:**
-  * Presentation deck chuyên nghiệp 25 slides covering project journey.
-  * Live demo tích hợp với pre-recorded backup.
-  * Value proposition và technical depth rõ ràng.
-
-* **Internal Demo:**
-  * Trình bày thành công cho 3 FCJ mentors.
-  * Nhận feedback tích cực về lựa chọn kiến trúc.
-  * Góp ý nhỏ: thêm các ví dụ error handling.
-
-* **Documentation:**
-  * Tất cả documentation được review và finalize.
-  * Bilingual content (EN/VI) hoàn chỉnh.
-  * Sẵn sàng cho final submission.
-
-### Khó khăn & Bài học
-
-* **Khó khăn:**
-  * Viết instructions step-by-step rõ ràng khó hơn dự kiến.
-  * Cân bằng giữa độ sâu kỹ thuật và khả năng tiếp cận cho beginners.
-
-* **Cách giải quyết:**
-  * Cho team members làm theo instructions để xác định các bước không rõ ràng.
-  * Thêm các boxes "Beginner Tips" xuyên suốt documentation.
-
-* **Bài học rút ra:**
-  * Documentation quan trọng như code.
-  * User testing cho documentation phát hiện các blind spots.
-
-### Kế hoạch Tuần 12
-
-* Final presentation cho tất cả stakeholders.
-* Hoàn thành self-evaluation và feedback sections.
-* Nộp báo cáo thực tập.
-* Ăn mừng hoàn thành dự án! 🎉
+* Chinh phục toàn diện dây chuyền CI/CD Github Actions. Mọi commit giờ đây đều tự động kích hoạt tiến trình kiểm định trơn tru, đẩy (push) code tự động hoàn toàn thay cho sức người.
+* Gỡ rối xuất sắc bài toán truyền dẫn Cache của nhà mạng đám mây Fly.io dựa trên khái thác luồng SFTP, di chuyển thành công hệ thống bộ nhớ từ máy Git lên máy ảo Cloud VM.
+* Giải quyết triệt để rủi ro Sập Server giữa chừng (VM die) lúc đang truyền tải tệp năng thông qua việc tinh chỉnh cờ ping máu (Healthcheck delays) trong quy trình deploy ứng dụng.

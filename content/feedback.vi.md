@@ -1,64 +1,37 @@
-# Chia Sẻ và Phản Hồi
+{{% notice warning %}}
+⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+{{% /notice %}}
 
-## 1. Cảm nhận về chương trình
+>Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud Journey, giúp team FCJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
 
-Chương trình thực tập First Cloud AI Journey là một trải nghiệm học tập tuyệt vời. Tôi cảm thấy được thử thách và hỗ trợ trong suốt 12 tuần. Sự kết hợp giữa học lý thuyết và các dự án thực hành đã giúp củng cố hiểu biết của tôi về các dịch vụ AWS. Sự hướng dẫn từ đội AWS là vô giá.
+### Đánh giá chung
 
----
+**1. Môi trường làm việc**  
+Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
 
-## 2. Mức độ hài lòng
+**2. Sự hỗ trợ của mentor / team admin**  
+Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
 
-Tôi rất hài lòng với chương trình (9/10). Chương trình học được cấu trúc tốt, bao gồm các dịch vụ AWS thiết yếu từ cơ bản đến nâng cao. Các buổi học hàng tuần và sự kiện cộng đồng đã nâng cao đáng kể trải nghiệm học tập. Điểm duy nhất cần cải thiện là thêm thời gian cho các bài lab thực hành phức tạp.
+**3. Sự phù hợp giữa công việc và chuyên ngành học**  
+Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
 
----
+**4. Cơ hội học hỏi & phát triển kỹ năng**  
+Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
 
-## 3. Kiến thức đạt được
+**5. Văn hóa & tinh thần đồng đội**  
+Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
 
-Trong suốt chương trình, tôi đã đạt được kiến thức sâu về:
+**6. Chính sách / phúc lợi cho thực tập sinh**  
+Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
 
-- Các dịch vụ cốt lõi AWS (EC2, S3, Lambda, DynamoDB)
-- Infrastructure as Code sử dụng CDK và CloudFormation
-- Các mẫu kiến trúc serverless
-- Best practices bảo mật với IAM
-- Triển khai ML sử dụng SageMaker
 
-Kiến thức này đóng góp trực tiếp vào dự án workshop của tôi.
+### Một số câu hỏi khác
+- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
+- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
+- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
 
----
 
-## 4. Kỹ năng cải thiện
-
-Ngoài kỹ năng kỹ thuật, tôi đã cải thiện các kỹ năng mềm bao gồm:
-
-- Viết tài liệu kỹ thuật
-- Trình bày các khái niệm phức tạp rõ ràng
-- Hợp tác trong môi trường nhóm
-- Quản lý thời gian với nhiều nhiệm vụ
-- Giải quyết vấn đề dưới áp lực
-
-Những kỹ năng này sẽ có giá trị trong suốt sự nghiệp của tôi.
-
----
-
-## 5. Điểm cần cải thiện (cho chương trình)
-
-Một số đề xuất để cải thiện chương trình:
-
-1. Thêm thời gian thực hành cho các bài lab phức tạp
-2. Giới thiệu sớm hơn về yêu cầu dự án workshop
-3. Thêm các buổi mentoring 1-1
-4. Thêm tài liệu bằng tiếng Việt
-5. Các buổi peer review cho nội dung workshop
-
----
-
-## 6. Bạn có giới thiệu chương trình cho bạn bè không? Tại sao?
-
-Chắc chắn, tôi sẽ giới thiệu chương trình thực tập FCJ cho bất kỳ ai quan tâm đến điện toán đám mây. Chương trình cung cấp:
-
-- Kinh nghiệm thực tế với AWS
-- Tiếp cận với các mentor trong ngành
-- Một cộng đồng hỗ trợ
-- Cơ hội xây dựng dự án portfolio
-
-Đây là bàn đạp tuyệt vời cho sự nghiệp trong công nghệ đám mây.
+### Đề xuất & mong muốn
+- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
+- Bạn có muốn tiếp tục chương trình này trong tương lai?
+- Góp ý khác (tự do chia sẻ):

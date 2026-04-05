@@ -9,7 +9,7 @@
 ![Vite](https://img.shields.io/badge/Vite-6.0-BD34FE?style=for-the-badge&logo=Vite&logoColor=white)
 ![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 
-**📍 Live Demo: [View Report](https://hei1sme.github.io/hei-FCAJ-intership-report/)**
+**📍 Live Demo: [View Report](https://justHman.github.io/HMAN-FCAJ-intership-report/)**
 
 </div>
 
@@ -88,8 +88,8 @@ hei-intership-report/
 
 ```bash
 # Clone the repository
-git clone https://github.com/hei1sme/hei-FCAJ-intership-report.git
-cd hei-intership-report
+git clone https://github.com/justHman/HMAN-FCAJ-intership-report.git
+cd HMAN-FCAJ-intership-report
 
 # Install dependencies
 npm install
@@ -136,6 +136,6 @@ This project is for educational and portfolio purposes as part of the FCJ Intern
 
 **Built with ❤️ using React & Vite**
 
-[![GitHub](https://img.shields.io/badge/GitHub-hei1sme-181717?style=flat-square&logo=github)](https://github.com/hei1sme)
+[![GitHub](https://img.shields.io/badge/GitHub-justHman-181717?style=flat-square&logo=github)](https://github.com/justHman)
 
 </div>

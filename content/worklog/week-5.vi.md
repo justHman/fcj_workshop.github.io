@@ -1,54 +1,21 @@
-### Mục tiêu Tuần 5
+### Mục tiêu tuần 5:
 
-* Hoàn thiện sơ đồ kiến trúc NutriTrack 2.0.
-* Thiết lập môi trường phát triển AWS (IAM, S3, DynamoDB).
-* Bắt đầu viết tài liệu Proposal để nộp.
-* Học API Gateway và Lambda best practices.
+* Thiết lập nền tảng backend sử dụng FastAPI.
+* Viết các class Python (wrappers) để gọi các API lấy dữ liệu bên ngoài.
 
-### Các nhiệm vụ thực hiện trong tuần
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Cài đặt framework FastAPI và thư viện `uvicorn` <br> - Phân bổ cấu trúc routing cho backend trong `app/api` | 02/02/2026   | 02/02/2026      | FastAPI Documentation |
+| 3   | - Code class wrapper giao tiếp với endpoint của USDA <br> - Triển khai bộ HTTP client tĩnh | 03/02/2026   | 03/02/2026      |
+| 4   | - Viết module wrapper giao tiếp với OpenFoodFacts <br> - Dịch JSON trả về dựa trên barcode thực tế kiểm tra lỗi | 04/02/2026   | 04/02/2026      |
+| 5   | - Chuẩn hóa kịch bản phát sinh xử lý Mock Data (Dữ liệu giả lập fallback) khi không cung cấp API tokens | 05/02/2026   | 05/02/2026      |
+| 6   | - Tích hợp các bộ API rời rạc vào luồng chạy chính `api.py` <br> - Mở server local và quan sát, test endpoint thông qua màn hình tự động `/docs` Swagger UI | 06/02/2026   | 06/02/2026      | Swagger UI Docs |
 
-| Ngày | Nhiệm vụ | Ngày BĐ | Ngày HT | Tài liệu tham khảo |
-| --- | --- | --- | --- | --- |
-| 1 | - Hoàn thiện Architecture <br>&emsp; + Hoàn thành sơ đồ kiến trúc AWS chi tiết <br>&emsp; + Chọn 6 dịch vụ cốt lõi: Cognito, API Gateway, Lambda, DynamoDB, S3, Bedrock | 02/02/2026 | 02/02/2026 | [Architecture v2.0] |
-| 2 | - Thiết lập môi trường AWS (Phần 1) <br>&emsp; + Tạo IAM roles với least privilege <br>&emsp; + Set up IAM user development cho team <br>&emsp; + Cấu hình MFA cho tất cả accounts | 03/02/2026 | 03/02/2026 | [IAM Config] |
-| 3 | - Thiết lập môi trường AWS (Phần 2) <br>&emsp; + Tạo S3 buckets cho media storage <br>&emsp; + Cấu hình bucket policies và CORS <br>&emsp; + Thiết lập lifecycle rules để tối ưu chi phí | 04/02/2026 | 04/02/2026 | [S3 Buckets] |
-| 4 | - Thiết kế DynamoDB <br>&emsp; + Thiết kế schema single-table cho NutriTrack <br>&emsp; + Tạo chiến lược partition key và sort key <br>&emsp; + Thiết lập GSI cho các query patterns | 05/02/2026 | 05/02/2026 | [DynamoDB Schema](https://docs.aws.amazon.com/dynamodb/) |
-| 5 | - Nghiên cứu API Gateway & Lambda <br>&emsp; + So sánh REST API vs HTTP API <br>&emsp; + Lambda function best practices <br>&emsp; + Kỹ thuật tối ưu cold start | 06/02/2026 | 06/02/2026 | [API Gateway Docs](https://docs.aws.amazon.com/apigateway/) |
-| 6-7 | - Viết tài liệu Proposal <br>&emsp; + Bắt đầu viết NutriTrack Proposal <br>&emsp; + Bao gồm problem statement, objectives, timeline <br>&emsp; + Tạo ước tính ngân sách | 07/02/2026 | 08/02/2026 | [Proposal Draft] |
+### Kết quả đạt được tuần 5:
 
-### Thành tựu Tuần 5
-
-* **Kiến trúc:**
-  * Hoàn thành sơ đồ kiến trúc AWS toàn diện với data flow.
-  * Chọn dịch vụ dựa trên serverless-first, tiết kiệm chi phí.
-  * Kiến trúc được team review và phê duyệt.
-
-* **Môi trường AWS:**
-  * IAM roles được cấu hình với Principle of Least Privilege.
-  * S3 buckets đã tạo: `nutritrack-media-dev`, `nutritrack-data-dev`.
-  * DynamoDB table được thiết kế với single-table pattern cho queries hiệu quả.
-
-* **Tài liệu:**
-  * Proposal draft hoàn thành 70% với objectives và timeline rõ ràng.
-  * Ước tính timeline phát triển 3 tháng phù hợp với kỳ thực tập.
-
-### Khó khăn & Bài học
-
-* **Khó khăn:**
-  * Thiết kế single-table DynamoDB khác với tư duy relational truyền thống.
-  * Cân bằng giữa tối ưu chi phí và yêu cầu hiệu năng.
-
-* **Cách giải quyết:**
-  * Sử dụng sách DynamoDB của Alex DeBrie và các ví dụ làm tham khảo.
-  * Tạo document access patterns trước, sau đó thiết kế schema.
-
-* **Bài học rút ra:**
-  * Access patterns phải được định nghĩa trước khi thiết kế DynamoDB schema.
-  * On-demand pricing tốt hơn cho development; provisioned cho production.
-
-### Kế hoạch Tuần 6
-
-* Hoàn thành và nộp NutriTrack Proposal để review.
-* Bắt đầu triển khai backend: cấu trúc API endpoints.
-* Thiết lập môi trường phát triển Lambda với SAM CLI.
-* Định nghĩa OpenAPI specification cho NutriTrack APIs.
+* Khởi tạo thành công server backend chạy trên FastAPI có khả năng mở rộng tốt.
+* Tích hợp thành công client giao tiếp gọi dữ liệu USDA API kèm theo cơ cấu parse dữ liệu.
+* Tích hợp thành công client thu thập dữ liệu barcode quét trên OpenFoodFacts.
+* Thiết lập được chức năng Mock data trả về dữ liệu giả lập dự phòng an toàn, giúp developer test app kể cả khi thiếu API keys thực.
+* Nghiệm thu vận hành hệ thống thông qua giao diện trực quan Swagger UI một cách hoàn chỉnh.

@@ -1,54 +1,18 @@
-### Week 6 Objectives
+### Week 6 Objectives:
 
-* Submit and get approval for NutriTrack Proposal.
-* Begin backend implementation with Lambda functions.
-* Set up SAM CLI for local development.
-* Create OpenAPI specification for all endpoints.
+* Construct the underlying image handling and compression utility systems.
 
-### Tasks carried out this week
+### Tasks to be carried out this week:
+| Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Write custom image utility methods to intercept and resize big images | 09/02/2026   | 09/02/2026      | Python Pillow Docs |
+| 3   | - Fix compression modes ignoring `RGBA` formats, catch P-mode palette errors | 10/02/2026   | 10/02/2026      |
+| 4   | - Handle dynamic temporary saving logic for intercepted files before they go to model inference | 11/02/2026   | 11/02/2026      |
+| 5   | - Implement logic to purge temporary image files safely to prevent memory leaks | 12/02/2026   | 12/02/2026      |
+| 6   | - Comprehensive code review on the media processing pipelines and error handling | 13/02/2026   | 13/02/2026      |
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --- | --- | --- | --- |
-| 1 | - Proposal Submission <br>&emsp; + Finalized NutriTrack Proposal document <br>&emsp; + Submitted for mentor review <br>&emsp; + Prepared presentation slides | 09/02/2026 | 09/02/2026 | [Final Proposal] |
-| 2 | - SAM CLI Setup <br>&emsp; + Installed AWS SAM CLI <br>&emsp; + Created sample template.yaml <br>&emsp; + Tested local Lambda invocation | 10/02/2026 | 10/02/2026 | [SAM Docs](https://docs.aws.amazon.com/serverless-application-model/) |
-| 3 | - OpenAPI Specification <br>&emsp; + Defined all 12 API endpoints <br>&emsp; + Documented request/response schemas <br>&emsp; + Created Swagger documentation | 11/02/2026 | 11/02/2026 | [OpenAPI Spec] |
-| 4 | - Lambda Functions (Part 1) <br>&emsp; + Created user management functions <br>&emsp; + POST /users, GET /users/{id} <br>&emsp; + Integrated with DynamoDB | 12/02/2026 | 12/02/2026 | [Lambda Code] |
-| 5 | - Lambda Functions (Part 2) <br>&emsp; + Created meal logging functions <br>&emsp; + POST /meals, GET /meals <br>&emsp; + Image upload to S3 presigned URL | 13/02/2026 | 13/02/2026 | [Lambda Code] |
-| 6-7 | - API Gateway Integration <br>&emsp; + Connected Lambda functions to API Gateway <br>&emsp; + Configured CORS settings <br>&emsp; + Tested endpoints with Postman | 14/02/2026 | 15/02/2026 | [API Tests] |
+### Week 6 Achievements:
 
-### Week 6 Achievements
-
-* **Proposal:**
-  * ✅ NutriTrack Proposal submitted and **approved by mentor**.
-  * Received positive feedback on serverless architecture choice.
-  * Minor suggestions: add more detail on AI integration.
-
-* **Development Environment:**
-  * SAM CLI configured for local Lambda development.
-  * Local testing working with Docker and DynamoDB Local.
-
-* **Backend Progress:**
-  * 6 Lambda functions implemented and tested.
-  * API Gateway configured with proper CORS and authorization.
-  * OpenAPI documentation generated with Swagger UI.
-
-### Challenges & Lessons
-
-* **Challenges:**
-  * SAM CLI on Windows had some path issues with Docker.
-  * Presigned URL generation required specific IAM permissions.
-
-* **Solutions:**
-  * Used WSL2 for SAM CLI development instead of native Windows.
-  * Added S3 PutObject permission to Lambda execution role.
-
-* **Lessons Learned:**
-  * WSL2 + SAM CLI is the recommended setup for Windows developers.
-  * Always test IAM permissions with a minimal policy first.
-
-### Next Week Plan
-
-* Implement remaining Lambda functions (nutrition calculation, AI recommendations).
-* Set up Amazon Cognito for user authentication.
-* Create CI/CD pipeline with GitHub Actions.
-* Begin frontend development structure.
+* Built fundamental image compression components utilizing Pillow effectively handling format errors (`OSError`: palette-based 'P').
+* Refined input file sanitization pipelines which act prior to AI analysis loops.
+* Ensured high performance and low memory overhead by efficiently purging temporary files post-inference.

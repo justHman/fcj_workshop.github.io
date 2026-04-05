@@ -1,56 +1,21 @@
-### Mục tiêu Tuần 8
+### Mục tiêu tuần 8:
 
-* Hoàn thành tất cả frontend pages và components.
-* Triển khai upload ảnh và phân tích ảnh bữa ăn.
-* Tích hợp frontend với tất cả backend APIs.
-* Bắt đầu unit testing cho Lambda functions.
+* Trình bày ứng dụng thông qua Giao diện người dùng đồ họa trực quan (Gradio).
+* Trưởng thành hóa kiến trúc LLM bằng cách chuyển sang kỹ thuật "Tool Calling" định dạng ép chuẩn (JSON format) và giải quyết tính toán đồng thời nhiều món ăn.
 
-### Các nhiệm vụ thực hiện trong tuần
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Đồng bộ mã nguồn chính thức đầu tiên lên Github lưu trữ <br> - Xây dựng file `.env` chuẩn | 23/02/2026   | 23/02/2026      | Github Commit History |
+| 3   | - Mở rộng code tính toán cho trường hợp một ảnh chứa rất nhiều loại thực phẩm <br> - Fix bug khi logic không tìm thấy gì (no items) và ngược lại | 24/02/2026   | 24/02/2026      |
+| 4   | - Xây dựng kỹ thuật LLM Tool Calling để bẻ luồng Model chỉ được phép nói JSON thay vì chat văn xuôi thông thường <br> - Bắt đầu đưa biến theo dõi Token và Giá tiền vào code | 25/02/2026   | 25/02/2026      |
+| 5   | - Vượt qua kiểm thử Regression cho API test với hàng loạt đồ vật (multiple items) <br> - Xử lý làm tròn số thập phân dư thừa trả về từ việc tính tổng JSON tool | 26/02/2026   | 26/02/2026      |
+| 6   | - Lập trình màn hình UI demo Web trực tiếp sử dụng framework Gradio <br> - Đồng bộ luồng Test logic qua `test_all.ipynb` và API tự động | 27/02/2026   | 27/02/2026      | Gradio Library Docs |
 
-| Ngày | Nhiệm vụ | Ngày BĐ | Ngày HT | Tài liệu tham khảo |
-| --- | --- | --- | --- | --- |
-| 1 | - Dashboard Page <br>&emsp; + Tạo layout dashboard chính <br>&emsp; + Triển khai widget theo dõi calories hàng ngày <br>&emsp; + Thêm biểu đồ macro breakdown | 23/02/2026 | 23/02/2026 | [Dashboard UI] |
-| 2 | - Meal Logging UI <br>&emsp; + Tạo form nhập bữa ăn <br>&emsp; + Triển khai component upload ảnh <br>&emsp; + Thêm autocomplete tìm kiếm thực phẩm | 24/02/2026 | 24/02/2026 | [Meal Log UI] |
-| 3 | - Image Analysis Feature <br>&emsp; + Tích hợp Bedrock cho phân tích ảnh bữa ăn <br>&emsp; + Tạo preview ảnh với nutrition overlay <br>&emsp; + Xử lý edge cases (không phát hiện thức ăn) | 25/02/2026 | 25/02/2026 | [AI Features] |
-| 4 | - Analytics Page <br>&emsp; + Xây dựng trends dinh dưỡng tuần/tháng <br>&emsp; + Tạo biểu đồ lịch sử calories <br>&emsp; + Thêm goal progress indicators | 26/02/2026 | 26/02/2026 | [Analytics UI] |
-| 5 | - API Integration <br>&emsp; + Kết nối tất cả frontend components với backend <br>&emsp; + Triển khai loading states đúng cách <br>&emsp; + Thêm error handling và retry logic | 27/02/2026 | 27/02/2026 | [Integration Tests] |
-| 6-7 | - Unit Testing <br>&emsp; + Viết unit tests cho Lambda functions <br>&emsp; + Đạt 75% code coverage <br>&emsp; + Sửa bugs phát hiện trong quá trình testing | 28/02/2026 | 01/03/2026 | [Test Reports] |
+### Kết quả đạt được tuần 8:
 
-### Thành tựu Tuần 8
-
-* **Frontend Pages:**
-  * ✅ Dashboard với real-time nutrition tracking.
-  * ✅ Meal logging với image upload.
-  * ✅ Analytics với trends tuần/tháng.
-  * ✅ Settings và profile pages.
-
-* **AI Features:**
-  * Phân tích ảnh bữa ăn hoạt động với 85%+ độ chính xác.
-  * Gợi ý dinh dưỡng dựa trên mục tiêu người dùng.
-  * Smart food search với các món ăn Việt Nam.
-
-* **Testing:**
-  * 75% unit test coverage cho Lambda functions.
-  * Integration tests cho các user flows quan trọng.
-  * 12 bugs đã sửa trong giai đoạn testing.
-
-### Khó khăn & Bài học
-
-* **Khó khăn:**
-  * Image analysis đôi khi nhận diện sai món ăn Việt Nam.
-  * Upload ảnh lớn gây ra timeout issues.
-
-* **Cách giải quyết:**
-  * Thêm ví dụ các món ăn Việt vào Bedrock prompt.
-  * Triển khai nén ảnh phía client trước khi upload (max 1MB).
-
-* **Bài học rút ra:**
-  * Prompt engineering rất quan trọng cho độ chính xác theo locale.
-  * Validation phía client ngăn chặn issues phía backend.
-
-### Kế hoạch Tuần 9
-
-* Hoàn thành end-to-end testing cho tất cả user flows.
-* Thiết lập CloudWatch monitoring và alarms.
-* Triển khai các tối ưu hóa hiệu năng.
-* Sửa bugs còn lại và polish UI.
+* Đã chính thức đẩy (commit) kết quả khởi tạo và kiến trúc lõi ứng dụng lên Repository, bảo vệ hoàn toàn lịch sử source file.
+* Chuyển đổi thành công kiến trúc trò chuyện hội thoại AI thông thường sang hình thức gọi hàm ép cứng lập trình (Tool Calling), điều này giúp Backend LLM trả đối tượng JSON tiêu chuẩn thay vì các mảng text phi cấu trúc.
+* Giải quyết triệt để rào cản nhận diện giới hạn, ứng dụng hiện nay đã phân tách và tra cứu dinh dưỡng được hàng loạt đồ vật phức tạp nằm chung trên 1 tấm hình (Multiple foods pipeline).
+* Hoàn thiện và cấp phát Web UI demo qua Gradio, cải thiện tốc độ kiểm thử đầu-cuối (end-to-end) thay cho việc gọi từng HTTP requests khô khan bằng Postman.
+* Xử lý trót lọt toàn bộ biên lỗi (edge cases), từ việc phát hiện ảnh rác không có đồ ăn nào cho tới kiểm soát dung lượng bytes hình ảnh.

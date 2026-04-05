@@ -1,50 +1,45 @@
-### Week 2 Objectives
+### Week 2 Objectives:
 
-* Complete Week 1 of "AWS Cloud Fundamentals" course on Coursera.
-* Practice 5 basic Labs (Bedrock, RDS, Lambda, Budgets, EC2).
-* Deep dive into IAM and VPC (Networking & Security).
-* Participate in AWS x FCAJ uniform shirt collection activity.
+* Connect and get acquainted with members of First Cloud Journey.
+* Understand basic AWS services, how to use the console & CLI.
 
-### Tasks to be carried out this week
+### Tasks to be carried out this week:
+| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
+| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --- | --- | --- | --- |
-| 1 | - AWS Hands-on Labs (Part 1) <br>&emsp; + Lab 1: Use Foundation Model in Amazon Bedrock <br>&emsp; + Lab 2: Create Amazon RDS Database <br>&emsp; + Lab 3: Create Web App using Lambda | 12/01/2026 | 12/01/2026 | [Screenshots / Lab Logs] |
-| 1 | - AWS Hands-on Labs (Part 2) <br>&emsp; + Lab 4: Set up Cost Budget (AWS Budgets) <br>&emsp; + Lab 5: Launch EC2 Instance | 12/01/2026 | 12/01/2026 | [Screenshots] |
-| 2 | - Deep Dive: AWS IAM <br>&emsp; + Study Users, Groups, Policies, Roles <br>&emsp; + Understand Principle of Least Privilege | 13/01/2026 | 13/01/2026 | [Notes on Notion] |
-| 3 | - Administrative & Team Bonding <br>&emsp; + Day off (Self-study) <br>&emsp; + Collected AWS x FCAJ Shirt <br>&emsp; + Networking with other teams | 14/01/2026 | 14/01/2026 | [Photo] |
-| 4 | - Deep Dive: Amazon VPC <br>&emsp; + Study Subnets, Route Tables, Internet Gateway <br>&emsp; + Understanding Public vs Private Subnets | 15/01/2026 | 15/01/2026 | [Architecture Draft] |
-| 4 | - Coursera Certification <br>&emsp; + Completed Week 1: AWS Cloud Fundamentals <br>&emsp; + Passed Quiz | 15/01/2026 | 15/01/2026 | [Certificate / Badge] |
-| 5-7 | - Self-Review & Plan Week 3 <br>&emsp; + Reviewed all labs <br>&emsp; + Updated Personal Report Website | 16/01/2026 | 18/01/2026 | [Web Link] |
 
-### Week 2 Achievements
+### Week 2 Achievements:
 
-* Hands-on Skills:
-  * Learned to initialize and manage 5 core services: **EC2** (Compute), **RDS** (Database), **Lambda** (Serverless), **Bedrock** (AI), **Budgets** (Cost).
-  * Successfully set up budget alarm (Budget Alarm) to avoid unexpected charges.
+* Understood what AWS is and mastered the basic service groups: 
+  * Compute
+  * Storage
+  * Networking 
+  * Database
+  * ...
 
-* Knowledge:
-  * Completed 100% of Coursera Week 1.
-  * Understood the **Shared Responsibility Model** and basic **VPC** network architecture.
+* Successfully created and configured an AWS Free Tier account.
 
-* Extracurricular Activities:
-  * Received uniform shirt, officially integrated into FCJ culture.
+* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
 
-### Challenges & Lessons
+* Installed and configured AWS CLI on the computer, including:
+  * Access Key
+  * Secret Key
+  * Default Region
+  * ...
 
-* **Challenges:**
-  * VPC concepts (Subnet, CIDR block) are quite abstract and difficult to visualize packet flow.
-  * RDS Lab took longer than expected provisioning time.
+* Used AWS CLI to perform basic operations such as:
 
-* **Solutions:**
-  * Redrew network diagrams on paper for better understanding.
-  * Read theory documentation while waiting for RDS to provision.
+  * Check account & configuration information
+  * Retrieve the list of regions
+  * View EC2 service
+  * Create and manage key pairs
+  * Check information about running services
+  * ...
 
-* **Lessons Learned:**
-  * Networking is core: Without understanding VPC, connecting services is impossible (e.g., Lambda cannot call RDS). Need to spend more time on this.
-
-### Next Week Plan
-
-* Focus: Finalize Idea Proposal "NeuraX Knowledge Vault" (Secure-RAG).
-* Technical: Deep dive into **Amazon Bedrock Knowledge Base** (for RAG project).
-* Administrative: Register office schedule for next Tuesday.
+* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+* ...

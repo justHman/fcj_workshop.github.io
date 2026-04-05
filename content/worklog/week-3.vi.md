@@ -1,53 +1,54 @@
-### Mục tiêu Tuần 3
+### Mục tiêu tuần 3:
 
-* Tìm hiểu sâu về Amazon Bedrock và các dịch vụ AI/ML trên AWS.
-* Đánh giá và chọn lọc ý tưởng dự án cùng team.
-* Tiếp tục học kiến trúc serverless.
-* Nghiên cứu Bedrock Knowledge Base cho RAG (Retrieval-Augmented Generation).
+* Hiểu foundation của các mô hình ngôn ngữ lớn (LLM) hiện đại.
+* Nắm vững kiến trúc Transformer và cơ chế hoạt động của GPT.
+* Thực hành xây dựng tokenizer và chuẩn bị dữ liệu cho LLM.
 
-### Các nhiệm vụ thực hiện trong tuần
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Tìm hiểu kiến trúc Transformer: <br>&emsp; + Cơ chế Encoder-Decoder <br>&emsp; + Self-Attention mechanism <br>&emsp; + So sánh BERT vs GPT <br> - Phân biệt Transformer vs LLM <br> - Hiểu foundation của tất cả mô hình ngôn ngữ hiện đại | 19/01/2026   | 19/01/2026      | Lecture 4: What are transformers? |
+| 3   | - Tìm hiểu cơ chế hoạt động của GPT-3: <br>&emsp; + Kiến trúc Decoder-only <br>&emsp; + Auto-regressive & Unsupervised learning <br>&emsp; + Zero-shot vs Few-shot learning <br> - Lộ trình xây dựng LLM từ scratch: <br>&emsp; + Building Blocks (Tokenization, Attention) <br>&emsp; + Pre-training & Fine-tuning stages | 20/01/2026   | 20/01/2026      | Lecture 5 & 6: GPT-3 & LLM Roadmap |
+| 4   | - Xây dựng LLM Tokenizer từ scratch với Python: <br>&emsp; + Tìm hiểu quy trình tokenization cơ bản <br>&emsp; + Tách từ và xây dựng vocabulary <br>&emsp; + Xử lý special tokens (unk, endoftext) <br> - **Thực hành:** <br>&emsp; + Code SimpleTokenizer class <br>&emsp; + Implement encode/decode methods | 21/01/2026   | 21/01/2026      | Lecture 7: Code LLM Tokenizer |
+| 5   | - Tìm hiểu GPT Tokenizer & Byte Pair Encoding (BPE): <br>&emsp; + So sánh các phương pháp tokenization <br>&emsp; + Hiểu cơ chế hoạt động BPE <br>&emsp; + Ưu điểm của subword tokenization <br> - **Thực hành:** <br>&emsp; + Sử dụng tiktoken library <br>&emsp; + Encode/decode text với BPE | 22/01/2026   | 22/01/2026      | Lecture 8: GPT Tokenizer |
+| 6   | - Tạo cặp dữ liệu Input-Target cho LLM: <br>&emsp; + Next-word prediction mechanism <br>&emsp; + Sliding window technique <br>&emsp; + Xây dựng GPTDatasetV1 class <br> - **Thực hành:** <br>&emsp; + Code PyTorch Dataset & DataLoader <br>&emsp; + Batching và shuffle dữ liệu | 23/01/2026   | 23/01/2026      | Lecture: Data Preparation with DataLoader |
 
-| Ngày | Nhiệm vụ | Ngày BĐ | Ngày HT | Tài liệu tham khảo |
-| --- | --- | --- | --- | --- |
-| 1 | - Thảo luận ý tưởng dự án <br>&emsp; + Đánh giá 3 đề xuất: NutriTrack, SnapChef, Secure-RAG <br>&emsp; + Mỗi thành viên trình bày proposal của mình | 19/01/2026 | 19/01/2026 | [Meeting Notes] |
-| 2 | - Deep Dive: Amazon Bedrock <br>&emsp; + Tổng quan Foundation Models <br>&emsp; + So sánh Claude, Titan, Llama <br>&emsp; + Pricing và use cases | 20/01/2026 | 20/01/2026 | [AWS Bedrock Docs](https://docs.aws.amazon.com/bedrock/) |
-| 3 | - Nghiên cứu: Bedrock Knowledge Base <br>&emsp; + Hiểu quy trình RAG <br>&emsp; + Data ingestion và vector embeddings <br>&emsp; + Tích hợp OpenSearch Serverless | 21/01/2026 | 21/01/2026 | [Bedrock KB Docs](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-it-works.html) |
-| 4 | - Học Serverless Architecture <br>&emsp; + Pattern API Gateway + Lambda <br>&emsp; + DynamoDB cho ứng dụng serverless <br>&emsp; + Kiến trúc event-driven | 22/01/2026 | 22/01/2026 | [Serverless on AWS](https://aws.amazon.com/serverless/) |
-| 5 | - Họp Team: Hoàn thiện Proposal <br>&emsp; + Kết hợp concept SnapChef + NutriTrack <br>&emsp; + Focus vào health & nutrition tracking <br>&emsp; + Gợi ý bữa ăn bằng AI | 23/01/2026 | 23/01/2026 | [Proposal Draft v1] |
-| 6-7 | - Viết tài liệu & Tự học <br>&emsp; + Phác thảo kiến trúc ban đầu cho NutriTrack <br>&emsp; + Cập nhật website báo cáo cá nhân | 24/01/2026 | 25/01/2026 | - |
 
-### Thành tựu Tuần 3
+### Kết quả đạt được tuần 3:
 
-* Kiến thức AI/ML:
-  * Hiểu toàn diện về hệ sinh thái **Amazon Bedrock**.
-  * Học cách **Knowledge Bases** triển khai RAG: data chunking → vector embeddings → semantic search → augmented generation.
-  * So sánh Foundation Models: Claude 3 (reasoning tốt nhất), Titan (AWS native), Llama 3 (open-source).
+* Nắm vững kiến trúc Transformer - foundation của tất cả LLM hiện đại:
+  * Hiểu cơ chế Encoder-Decoder
+  * Nắm được Self-Attention mechanism
+  * Phân biệt được BERT vs GPT architecture
+  * Hiểu sự khác biệt giữa Transformer và LLM
 
-* Tiến độ dự án:
-  * Team thu hẹp từ 3 proposal xuống 1 concept kết hợp: **NutriTrack 2.0** (NutriTrack + SnapChef).
-  * Hoàn thành bản phác thảo kiến trúc ban đầu theo hướng serverless.
+* Hiểu sâu về cơ chế hoạt động của GPT-3:
+  * Decoder-only architecture
+  * Auto-regressive và Unsupervised learning
+  * Zero-shot vs Few-shot learning capabilities
+  * Emergent behaviors và chi phí huấn luyện
 
-* Kỹ năng Serverless:
-  * Hiểu API Gateway routing và Lambda trigger patterns.
-  * Học các concept thiết kế single-table DynamoDB.
+* Nắm được lộ trình 3 giai đoạn xây dựng LLM từ scratch:
+  * Building Blocks (Tokenization, Attention)
+  * Pre-training (tạo Base Model)
+  * Fine-tuning (tạo specialized model)
 
-### Khó khăn & Bài học
+* Thực hành xây dựng LLM Tokenizer từ con số 0:
+  * Code SimpleTokenizer class với Python
+  * Implement encode/decode methods
+  * Xử lý special tokens (unk, endoftext)
+  * Hiểu được quy trình tokenization cơ bản
 
-* **Khó khăn:**
-  * Các khái niệm RAG khá phức tạp; vector embeddings và similarity search đòi hỏi hiểu biết toán học.
-  * Team có các vision khác nhau về dự án; cần nhiều buổi thảo luận để align.
+* Làm chủ GPT Tokenizer và Byte Pair Encoding:
+  * So sánh các phương pháp tokenization
+  * Hiểu cơ chế và ưu điểm của BPE
+  * Sử dụng thành thạo tiktoken library
+  * Encode/decode text với subword tokenization
 
-* **Cách giải quyết:**
-  * Xem các tutorial YouTube về embeddings và vector databases.
-  * Tạo Miro board chung để visualize ý tưởng của mọi người trước khi voting.
+* Chuẩn bị dữ liệu huấn luyện cho LLM:
+  * Hiểu cơ chế next-word prediction
+  * Áp dụng sliding window technique
+  * Xây dựng GPTDatasetV1 class với PyTorch
+  * Sử dụng DataLoader để batching và shuffle dữ liệu
 
-* **Bài học rút ra:**
-  * RAG rất mạnh nhưng cần chuẩn bị dữ liệu đúng cách (chunking strategy quan trọng).
-  * Align sớm trong team tiết kiệm thời gian sau này; giải quyết conflict sớm tránh vấn đề lớn hơn.
-
-### Kế hoạch Tuần 4
-
-* Chốt và vote chính thức cho project proposal (NutriTrack 2.0).
-* Bắt đầu thiết kế kiến trúc chi tiết cho NutriTrack.
-* Tham gia sự kiện AWS re:Invent 2025 Recap tại Văn phòng AWS Việt Nam.
-* Học về Amazon S3 advanced features và Amazon Cognito cho authentication.
+* Có nền tảng vững chắc để tiến đến việc xây dựng và huấn luyện mô hình LLM hoàn chỉnh.

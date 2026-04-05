@@ -1,17 +1,19 @@
-# Student Information
+# Internship Report
+### Student Information:
+&emsp; **Full Name:** Ngô Hoài Nam
 
-**Full Name:** Le Nguyen Gia Hung
+&emsp; **Phone Number:** 0901620311
 
-**Phone Number:** 0394262651
+&emsp; **Email:** hmanclubs11@gmail.com
 
-**Email:** <heiontheway@gmail.com>
+&emsp; **University:** FPT University HCMC
 
-**University:** FPT University
+&emsp; **Major:** Artificial Intelligence
 
-**Major:** Artificial Intelligence
+&emsp; **Class:** AWS082025
 
-**Internship Company:** Amazon Web Services Vietnam
+&emsp; **Internship Company:** Amazon Web Services Vietnam LLC
 
-**Internship Position:** FCAJ Cloud Intern
+&emsp; **Internship Position:** FCJ Cloud Intern
 
-**Internship Duration:** From 05/01/2026 to 05/04/2026
+&emsp; **Internship Period:** From 05/01/2026 to 05/04/2026

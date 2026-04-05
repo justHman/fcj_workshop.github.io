@@ -1,53 +1,54 @@
-### Week 3 Objectives
+### Week 3 Objectives:
 
-* Deep dive into Amazon Bedrock and AI/ML services on AWS.
-* Evaluate and shortlist project ideas with the team.
-* Continue learning serverless architecture patterns.
-* Research Bedrock Knowledge Base for RAG (Retrieval-Augmented Generation).
+* Understand the foundation of modern Large Language Models (LLMs).
+* Master the Transformer architecture and GPT's operational mechanisms.
+* Practice building a tokenizer and preparing data for LLMs.
 
-### Tasks carried out this week
+### Tasks to be carried out this week:
+| Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Understand Transformer architecture: <br>&emsp; + Encoder-Decoder mechanism <br>&emsp; + Self-Attention mechanism <br>&emsp; + BERT vs GPT comparison <br> - Differentiate Transformer vs LLM <br> - Understand the foundation of all modern language models | 19/01/2026   | 19/01/2026      | Lecture 4: What are transformers? |
+| 3   | - Investigate GPT-3's operational mechanism: <br>&emsp; + Decoder-only architecture <br>&emsp; + Auto-regressive & Unsupervised learning <br>&emsp; + Zero-shot vs Few-shot learning <br> - Roadmap for building LLM from scratch: <br>&emsp; + Building Blocks (Tokenization, Attention) <br>&emsp; + Pre-training & Fine-tuning stages | 20/01/2026   | 20/01/2026      | Lecture 5 & 6: GPT-3 & LLM Roadmap |
+| 4   | - Build an LLM Tokenizer from scratch with Python: <br>&emsp; + Understand the basic tokenization process <br>&emsp; + Split words and build vocabulary <br>&emsp; + Handle special tokens (unk, endoftext) <br> - **Practice:** <br>&emsp; + Code SimpleTokenizer class <br>&emsp; + Implement encode/decode methods | 21/01/2026   | 21/01/2026      | Lecture 7: Code LLM Tokenizer |
+| 5   | - Explore GPT Tokenizer & Byte Pair Encoding (BPE): <br>&emsp; + Compare tokenization methods <br>&emsp; + Understand BPE operational mechanism <br>&emsp; + Advantages of subword tokenization <br> - **Practice:** <br>&emsp; + Use tiktoken library <br>&emsp; + Encode/decode text with BPE | 22/01/2026   | 22/01/2026      | Lecture 8: GPT Tokenizer |
+| 6   | - Create Input-Target data pairs for LLM: <br>&emsp; + Next-word prediction mechanism <br>&emsp; + Sliding window technique <br>&emsp; + Build GPTDatasetV1 class <br> - **Practice:** <br>&emsp; + Code PyTorch Dataset & DataLoader <br>&emsp; + Batching and shuffling data | 23/01/2026   | 23/01/2026      | Lecture: Data Preparation with DataLoader |
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --- | --- | --- | --- |
-| 1 | - Project Ideas Discussion <br>&emsp; + Evaluated 3 proposals: NutriTrack, SnapChef, Secure-RAG <br>&emsp; + Each member presented their proposal | 19/01/2026 | 19/01/2026 | [Meeting Notes] |
-| 2 | - Deep Dive: Amazon Bedrock <br>&emsp; + Foundation Models overview <br>&emsp; + Claude, Titan, Llama models comparison <br>&emsp; + Pricing and use cases | 20/01/2026 | 20/01/2026 | [AWS Bedrock Docs](https://docs.aws.amazon.com/bedrock/) |
-| 3 | - Research: Bedrock Knowledge Base <br>&emsp; + Understanding RAG workflow <br>&emsp; + Data ingestion and vector embeddings <br>&emsp; + OpenSearch Serverless integration | 21/01/2026 | 21/01/2026 | [Bedrock KB Docs](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-it-works.html) |
-| 4 | - Serverless Architecture Study <br>&emsp; + API Gateway + Lambda patterns <br>&emsp; + DynamoDB for serverless apps <br>&emsp; + Event-driven architecture | 22/01/2026 | 22/01/2026 | [Serverless on AWS](https://aws.amazon.com/serverless/) |
-| 5 | - Team Meeting: Proposal Refinement <br>&emsp; + Merged SnapChef + NutriTrack concepts <br>&emsp; + Focus on health & nutrition tracking <br>&emsp; + AI-powered meal recommendations | 23/01/2026 | 23/01/2026 | [Proposal Draft v1] |
-| 6-7 | - Documentation & Self-study <br>&emsp; + Drafted initial architecture for NutriTrack <br>&emsp; + Updated personal report website | 24/01/2026 | 25/01/2026 | - |
 
-### Week 3 Achievements
+### Week 3 Achievements:
 
-* AI/ML Knowledge:
-  * Gained comprehensive understanding of **Amazon Bedrock** ecosystem.
-  * Learned how **Knowledge Bases** implement RAG: data chunking → vector embeddings → semantic search → augmented generation.
-  * Compared Foundation Models: Claude 3 (best reasoning), Titan (AWS native), Llama 3 (open-source).
+* Mastered the Transformer architecture - the foundation of all modern LLMs:
+  * Understood the Encoder-Decoder mechanism
+  * Grasped the Self-Attention mechanism
+  * Effectively distinguished BERT vs GPT architecture
+  * Understood the difference between standard Transformers and LLMs
 
-* Project Progress:
-  * Team narrowed down from 3 proposals to 1 merged concept: **NutriTrack 2.0** (combining NutriTrack + SnapChef).
-  * Initial architecture draft completed focusing on serverless design.
+* Gained deep understanding of GPT-3's working mechanism:
+  * Decoder-only architecture
+  * Auto-regressive and Unsupervised learning implementations
+  * Zero-shot vs Few-shot learning capabilities
+  * Emergent behaviors and training cost implications
 
-* Serverless Skills:
-  * Understood API Gateway routing and Lambda trigger patterns.
-  * Learned DynamoDB single-table design concepts.
+* Grasped the 3-stage roadmap for building an LLM from scratch:
+  * Building Blocks (Tokenization, Attention)
+  * Pre-training (creating Base Model)
+  * Fine-tuning (creating specialized model)
 
-### Challenges & Lessons
+* Practical implementation of LLM Tokenizer from scratch:
+  * Coded SimpleTokenizer class with Python
+  * Implemented encode/decode methods effectively
+  * Handled special tokens (unk, endoftext)
+  * Deeply understood the basic tokenization process
 
-* **Challenges:**
-  * RAG concepts are complex; vector embeddings and similarity search require mathematical understanding.
-  * Team had different visions for the project; required multiple discussions to align.
+* Mastered GPT Tokenizer and Byte Pair Encoding (BPE):
+  * Compared different tokenization methods comprehensively
+  * Understood the mechanism and benefits of BPE
+  * Proficiently operated the tiktoken library
+  * Successfully encoded/decoded text using subword tokenization
 
-* **Solutions:**
-  * Watched YouTube tutorials on embeddings and vector databases.
-  * Created a shared Miro board to visualize everyone's ideas before voting.
+* Prepared training data for LLMs:
+  * Understood the next-word prediction mechanism
+  * Applied the sliding window technique accurately
+  * Built GPTDatasetV1 class relying on PyTorch
+  * Utilized DataLoader for effective data batching and shuffling
 
-* **Lessons Learned:**
-  * RAG is powerful but requires proper data preparation (chunking strategy matters).
-  * Early team alignment saves time later; conflicts resolved early prevent bigger issues.
-
-### Next Week Plan
-
-* Finalize and vote on the official project proposal (NutriTrack 2.0).
-* Begin detailed architecture design for NutriTrack.
-* Attend AWS re:Invent 2025 Recap Event at AWS Vietnam Office.
-* Learn about Amazon S3 advanced features and Amazon Cognito for authentication.
+* Established a solid foundation to proceed toward building and training complete LLM architectures.

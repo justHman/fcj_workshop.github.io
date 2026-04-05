@@ -1,60 +1,18 @@
-### Mục tiêu Tuần 7
+### Mục tiêu tuần 7:
 
-* Triển khai Cognito authentication cho NutriTrack.
-* Hoàn thành các Lambda functions còn lại cho AI features.
-* Thiết lập CI/CD pipeline với GitHub Actions.
-* Bắt đầu frontend development với React.
+* Tích hợp Amazon Bedrock (các mô hình ngôn ngữ lớn) để bắt đầu nhận diện món ăn từ hình ảnh.
 
-### Các nhiệm vụ thực hiện trong tuần
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Khởi tạo Boto3 client giao tiếp với AWS Bedrock API | 16/02/2026   | 16/02/2026      | Boto3 Bedrock Docs |
+| 3   | - Thực hiện inference test với các model Claude 3 qua Bedrock <br> - Đẩy thử nghiệm luồng ảnh đã được hàm nén (tuần 6) xử lý lên VLM endpoint | 17/02/2026   | 17/02/2026      |
+| 4   | - Thiết kế Prompt (Prompt Engineering) định hướng AI: "Nhận dạng tất cả thức ăn trong hình" | 18/02/2026   | 18/02/2026      | Prompt templates |
+| 5   | - Thử ghép kết quả LLM trả về với logic Mock Data đã viết ở tuần 5 | 19/02/2026   | 19/02/2026      |
+| 6   | - Refactor lại cấu trúc Model trên backend để ẩn logic LLM đi <br> - Bổ sung check định dạng Token môi trường | 20/02/2026   | 20/02/2026      |
 
-| Ngày | Nhiệm vụ | Ngày BĐ | Ngày HT | Tài liệu tham khảo |
-| --- | --- | --- | --- | --- |
-| 1 | - Thiết lập Amazon Cognito <br>&emsp; + Tạo User Pool cho NutriTrack <br>&emsp; + Cấu hình password policies <br>&emsp; + Thiết lập email verification | 16/02/2026 | 16/02/2026 | [Cognito Docs](https://docs.aws.amazon.com/cognito/) |
-| 2 | - Cognito Integration <br>&emsp; + Tích hợp Cognito với API Gateway <br>&emsp; + Tạo JWT authorizer <br>&emsp; + Test protected endpoints | 17/02/2026 | 17/02/2026 | [Auth Config] |
-| 3 | - AI Lambda Functions <br>&emsp; + Tạo Lambda tích hợp Bedrock <br>&emsp; + Triển khai endpoint gợi ý bữa ăn <br>&emsp; + Thêm function phân tích dinh dưỡng | 18/02/2026 | 18/02/2026 | [Bedrock Integration](https://docs.aws.amazon.com/bedrock/) |
-| 4 | - Thiết lập CI/CD Pipeline <br>&emsp; + Tạo GitHub Actions workflow <br>&emsp; + Cấu hình SAM deploy steps <br>&emsp; + Thiết lập môi trường dev/staging | 19/02/2026 | 19/02/2026 | [GitHub Actions] |
-| 5 | - Thiết lập Frontend Project <br>&emsp; + Khởi tạo React + Vite project <br>&emsp; + Cấu hình Tailwind CSS <br>&emsp; + Thiết lập cấu trúc project | 20/02/2026 | 20/02/2026 | [Frontend Repo] |
-| 6-7 | - Frontend Development (Phần 1) <br>&emsp; + Tạo authentication pages (Login, Register) <br>&emsp; + Tích hợp AWS Amplify cho Cognito <br>&emsp; + Test auth flow end-to-end | 21/02/2026 | 22/02/2026 | [UI Components] |
+### Kết quả đạt được tuần 7:
 
-### Thành tựu Tuần 7
-
-* **Authentication:**
-  * Cognito User Pool đã tạo với secure password policy.
-  * API Gateway được bảo vệ với JWT authorizer.
-  * Email verification flow hoạt động.
-
-* **AI Integration:**
-  * Bedrock Claude 3 Sonnet được tích hợp cho gợi ý bữa ăn.
-  * Nutrition analysis function cung cấp breakdown calories/macros.
-  * Rate limiting được cấu hình để quản lý chi phí Bedrock API.
-
-* **CI/CD:**
-  * Pipeline deployment tự động: Push → Test → Deploy.
-  * Stacks riêng biệt cho môi trường dev và staging.
-  * Cơ chế rollback được cấu hình.
-
-* **Frontend:**
-  * React + Vite + Tailwind project đã khởi tạo.
-  * Trang Login và Registration hoàn thành.
-  * AWS Amplify được cấu hình cho Cognito integration.
-
-### Khó khăn & Bài học
-
-* **Khó khăn:**
-  * Bedrock API responses là async; cần proper error handling.
-  * Cognito token refresh flow khá phức tạp để implement.
-
-* **Cách giải quyết:**
-  * Triển khai retry logic với exponential backoff cho Bedrock.
-  * Sử dụng AWS Amplify library vì nó tự động xử lý token refresh.
-
-* **Bài học rút ra:**
-  * Bedrock prompts cần được engineering cẩn thận để đảm bảo output nhất quán.
-  * AWS Amplify đơn giản hóa đáng kể việc tích hợp auth frontend.
-
-### Kế hoạch Tuần 8
-
-* Hoàn thành tất cả frontend pages (Dashboard, Meal Log, Analytics).
-* Triển khai upload ảnh và phân tích ảnh bữa ăn.
-* Tích hợp frontend với tất cả backend APIs.
-* Bắt đầu unit testing cho Lambda functions.
+* Ủy quyền thành công thông tin đăng nhập AWS để gửi request an toàn lấy inference từ dịch vụ Amazon Bedrock qua `boto3`.
+* Hoàn thiện kết nối Cầu nối phân tích Ảnh (Image-to-text) thông qua việc gửi ảnh người dùng lên Cloud LLM và nhận lại danh sách các món ăn được phân loại.
+* Thiết lập được các chỉ thị lệnh Prompt Engineering ban đầu giúp thu hẹp phạm vi ảo giác (hallucinations) của AI, ép model chỉ xuất chuỗi JSON định lượng dinh dưỡng.

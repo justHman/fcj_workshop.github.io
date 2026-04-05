@@ -1,60 +1,41 @@
-### Mục tiêu Tuần 1:
+### Mục tiêu tuần 1:
 
-* Thiết lập môi trường làm việc số hoàn chỉnh cho team NeuraX (Discord, GitHub, Trello).
-* Tổ chức thành công buổi Kick-off Meeting và thống nhất quy trình vận hành.
-* Nghiên cứu các dịch vụ AWS cơ bản theo vai trò (IAM, S3, EC2).
-* Brainstorm ý tưởng dự án cho kỳ thực tập.
+* Tham gia buổi kickoff và kết nối với các thành viên trong First Cloud Journey.
+* Lập team và thiết lập quy trình làm việc hiệu quả.
+* Nắm vững các nội quy, quy định tại đơn vị thực tập.
+* Tạo AWS Free Tier account và làm quen với AWS Console & CLI.
+* Hoàn thành các lab thực hành để nhận credit miễn phí.
 
-### Các nhiệm vụ thực hiện trong tuần:
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc                                                                                                                                                                               | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                 |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ---------------------------------------------------------------------------------------------- |
+| 2   | - Tham gia buổi kickoff <br> - Lập team <br> - Làm quen với các thành viên trong team và FCJ                                                                                            | 05/01/2026   | 05/01/2026      |
+| 3   | - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                                                                | 06/01/2026   | 06/01/2026      | <https://rules.fcjuni.com/>                                                                    |
+| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - Thực hành: <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 07/01/2026   | 07/01/2026      | <https://cloudjourney.awsstudygroup.com/>                                                      |
+| 5   | - Họp team <br> - Thống nhất giờ, lịch và nển tảng làm việc <br> - Phân vai trò <br> - Luật và nguyên tắc làm việc                                                                      | 08/01/2026   | 09/01/2026      | <https://docs.google.com/document/d/1z39r6Sw2q9YPsd6R7Pq0MtFdnxX9Dew8NnBnVD07WwM/edit?tab=t.0> |
+| 6   | - Thực hành 5 lab để nhận 100 USD free                                                                                                                                                  | 09/01/2026   | 09/01/2026      | <https://thinhnguyen1211.github.io/fcj-first-lab/>                                             |
 
-| Ngày | Nhiệm vụ | Ngày BĐ | Ngày HT | Tài liệu tham khảo |
-| --- | --- | --- | --- | --- |
-| 1 | - Thiết lập Discord Server "NeuraX HQ" <br>&emsp; + Tạo các kênh theo nhóm chức năng <br>&emsp; + Phân quyền Role cho 5 thành viên | 05/01/2026 | 06/01/2026 | - |
-| 2 | - Khởi tạo GitHub Organization <br>&emsp; + Tạo 3 Repositories <br>&emsp; + Cấu hình Branch Protection Rules <br>&emsp; + Invite members | 06/01/2026 | 07/01/2026 | [NeuraX-HQ](https://github.com/NeuraX-HQ) |
-| 3 | - Chuẩn bị Agenda cuộc họp Kick-off <br> - Chủ trì cuộc họp với 5 thành viên <br>&emsp; + Xác nhận vai trò & timeline <br>&emsp; + Thảo luận quy chế vận hành | 07/01/2026 | 08/01/2026 | - |
-| 4 | - Tìm hiểu AWS cơ bản <br>&emsp; + AWS là gì và các nhóm dịch vụ chính <br>&emsp; + Compute, Storage, Networking, Database <br> - Nghiên cứu AWS IAM <br>&emsp; + Users, Groups, Policies <br>&emsp; + MFA Configuration | 08/01/2026 | 09/01/2026 | [AWS IAM Docs](https://docs.aws.amazon.com/IAM/) |
-| 5 | - Nghiên cứu Amazon S3 <br>&emsp; + Bucket, Objects, Permissions <br>&emsp; + Storage Classes <br> - Tìm hiểu Amazon EC2 cơ bản <br>&emsp; + Instance types, AMI <br>&emsp; + Security Groups | 09/01/2026 | 10/01/2026 | [AWS S3 Docs](https://docs.aws.amazon.com/s3/) |
-| 6 | - Brainstorm ý tưởng dự án với team <br>&emsp; + Trao đổi về các hướng có thể triển khai <br>&emsp; + Chưa chốt được idea cụ thể | 10/01/2026 | 11/01/2026 | - |
-| 7 | - Setup Website báo cáo cá nhân <br>&emsp; + Sử dụng React + Vite <br>&emsp; + Deploy lên GitHub Pages | 11/01/2026 | 11/01/2026 | - |
 
-### Thành tựu Tuần 1:
+### Kết quả đạt được tuần 1:
 
-* 100% thành viên (5/5) đã tham gia đầy đủ các kênh làm việc:
-  * Discord Server "NeuraX HQ"
-  * GitHub Organization
-  * Trello Board
+* **Kết nối và làm quen:**
+  * Đã tham gia buổi kickoff thành công
+  * Lập team và làm quen với các thành viên trong FCJ
+  * Hiểu rõ văn hóa và môi trường làm việc tại FCJ
 
-* Đã ban hành 02 văn bản quan trọng:
-  * Biên bản họp Kick-off
-  * Quy chế vận hành Team
+* **Thiết lập quy trình làm việc:**
+  * Nắm vững các nội quy, quy định tại đơn vị thực tập
+  * Thống nhất giờ làm việc, lịch họp và nền tảng làm việc
+  * Phân vai trò rõ ràng cho từng thành viên
+  * Thiết lập luật và nguyên tắc làm việc nhóm
 
-* Nắm được kiến thức cơ bản về AWS:
-  * Hiểu tổng quan về các nhóm dịch vụ AWS (Compute, Storage, Networking, Database)
-  * Tìm hiểu về IAM: Users, Groups, Policies và cách phân quyền
-  * Nghiên cứu S3: Bucket, Objects, Storage Classes
-  * Làm quen với EC2: Instance types, AMI, Security Groups
+* **Kiến thức và thực hành AWS:**
+  * Đã tạo và cấu hình AWS Free Tier account thành công
+  * Làm quen với AWS Management Console và cách sử dụng giao diện web
+  * Cài đặt và cấu hình AWS CLI với Access Key, Secret Key, Region
+  * Thực hiện các thao tác CLI cơ bản: kiểm tra tài khoản, quản lý EC2, key pair
+  * Hoàn thành 5 lab thực hành và nhận được 100 USD credit miễn phí
 
-* Hoàn thành setup Website báo cáo cá nhân và deploy lên GitHub Pages.
-
-* Đã brainstorm ý tưởng với team nhưng chưa chốt được idea cụ thể, cần tiếp tục thảo luận trong tuần sau.
-
-### Khó khăn & Bài học:
-
-* **Khó khăn:** 
-  * Việc cấu hình Branch Protection Rule trên GitHub ban đầu gặp lỗi do chưa set đủ quyền Admin cho Bot account.
-  * Các dịch vụ AWS khá nhiều và phức tạp, cần thời gian để nắm vững.
-
-* **Cách giải quyết:** 
-  * Tham khảo GitHub Docs và cấp lại quyền Owner/Admin cho Bot account.
-  * Tập trung học từng service một, bắt đầu từ những service cơ bản nhất (IAM, S3, EC2).
-
-* **Bài học rút ra:** 
-  * Cần check kỹ quyền hạn (Permissions) của Organization trước khi cấu hình.
-  * Nên có lộ trình học AWS rõ ràng, không nên học lan man nhiều service cùng lúc.
-
-### Kế hoạch Tuần 2:
-
-* Tiếp tục học thêm các kiến thức AWS cơ bản (VPC, Lambda, API Gateway).
-* Lên công ty làm quen môi trường làm việc thực tế và gặp gỡ team.
-* Mục tiêu chính: Chốt được ý tưởng dự án chính thức trong Week 2.
-* Bắt đầu phác thảo Proposal nếu đã chốt được idea.
+* **Kết quả tổng quan:**
+  * Team đã sẵn sàng bước vào giai đoạn làm việc chính thức
+  * Có nền tảng AWS cơ bản để triển khai các task phức tạp hơn

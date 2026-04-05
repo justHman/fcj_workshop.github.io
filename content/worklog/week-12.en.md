@@ -1,73 +1,21 @@
-### Week 12 Objectives
+### Week 12 Objectives:
 
-* Deliver final presentation to all stakeholders.
-* Complete self-evaluation and feedback sections.
-* Submit internship report.
-* Celebrate project completion and reflect on the journey.
+* Transition primary endpoints into the Amazon AWS ecosystem targeting Serverless ECS Fargate capabilities.
+* Secure and scale up backend async capabilities finalizing the internship project.
 
-### Tasks carried out this week
+### Tasks to be carried out this week:
+| Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Set up ECR (Elastic Container Registry) to store Docker Images in AWS securely | 23/03/2026   | 23/03/2026      | AWS ECR Guide |
+| 3   | - Test and implement AWS ECS Fargate cluster definitions <br> - Resolve network port connectivity issues inside private subnets to read true Healthcheck IPs | 24/03/2026   | 24/03/2026      | AWS ECS Developer Guide |
+| 4   | - Configure S3 Bucket caching overlaps (Capacity Provider Fargate Spot adjustments) to drastically cut AWS bills | 25/03/2026   | 25/03/2026      |
+| 5   | - Finalize Threadpool concurrency structures for asynchronous background task execution bridging Redis/SQS queue patterns | 26/03/2026   | 26/03/2026      | 
+| 6   | - Implement JSON Web Token (JWT) library `jose` for API route protections <br> - Finalize Docker multi-stage debug builds gathering all deployment documentation | 27/03/2026   | 27/03/2026      | 
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --- | --- | --- | --- |
-| 1 | - Final Presentation Preparation <br>&emsp; + Final rehearsal with team <br>&emsp; + Prepared backup demo video <br>&emsp; + Tested all technical setup | 23/03/2026 | 23/03/2026 | [Presentation] |
-| 2 | - Final Presentation <br>&emsp; + Presented NutriTrack to FCJ leadership <br>&emsp; + Live demo with Q&A session <br>&emsp; + Received commendation for architecture | 24/03/2026 | 24/03/2026 | [Presentation Recording] |
-| 3 | - Self-Evaluation <br>&emsp; + Completed self-evaluation form <br>&emsp; + Reflected on 12-week journey <br>&emsp; + Identified strengths and growth areas | 25/03/2026 | 25/03/2026 | [Evaluation Form] |
-| 4 | - Program Feedback <br>&emsp; + Wrote detailed feedback for FCJ program <br>&emsp; + Highlighted positive experiences <br>&emsp; + Suggested improvements for future interns | 26/03/2026 | 26/03/2026 | [Feedback Form] |
-| 5 | - Report Finalization <br>&emsp; + Final review of all report sections <br>&emsp; + Verified bilingual content accuracy <br>&emsp; + Generated final PDF version | 27/03/2026 | 27/03/2026 | [Final Report] |
-| 6-7 | - Celebration & Wrap-up <br>&emsp; + Team celebration dinner <br>&emsp; + Knowledge transfer to next cohort <br>&emsp; + LinkedIn post about internship experience | 28/03/2026 | 29/03/2026 | [Photos] |
+### Week 12 Achievements:
 
-### Week 12 Achievements
-
-* **Final Presentation:**
-  * Successfully presented NutriTrack to 15+ stakeholders.
-  * Live demo went smoothly without technical issues.
-  * Received excellent feedback on serverless architecture design.
-  * Team NeuraX ranked among top 3 projects in the cohort.
-
-* **Project Completion:**
-  * NutriTrack 2.0 fully deployed and operational.
-  * All documentation complete and bilingual.
-  * GitHub repository public with comprehensive README.
-  * Workshop ready for others to follow.
-
-* **Personal Growth:**
-  * Mastered 10+ AWS services.
-  * Gained experience in end-to-end project development.
-  * Improved presentation and documentation skills.
-  * Built strong network with AWS professionals.
-
-### Overall Internship Summary
-
-**12-Week Journey Highlights:**
-
-| Phase | Weeks | Key Accomplishments |
-|-------|-------|---------------------|
-| Foundation | 1-2 | Team setup, AWS basics, lab practice |
-| Exploration | 3-4 | Project selection, AWS re:Invent event |
-| Design | 5-6 | Architecture, proposal approval |
-| Implementation | 7-8 | Backend + Frontend development |
-| Optimization | 9-10 | Testing, monitoring, performance |
-| Finalization | 11-12 | Documentation, presentation, submission |
-
-**AWS Services Mastered:**
-* Amazon Cognito, API Gateway, Lambda, DynamoDB
-* Amazon S3, CloudWatch, Amazon Bedrock
-* AWS SAM, CloudFormation, IAM
-
-**Project Statistics:**
-* 12 Lambda functions deployed
-* 6 API endpoints with full CRUD
-* 85%+ AI accuracy for meal recognition
-* 95% test pass rate
-* <200ms average API response time
-
-### Final Reflection
-
-This 12-week internship at AWS Vietnam through the FCJ program has been a transformative experience. From setting up team infrastructure in Week 1 to delivering a production-ready AI-powered application in Week 12, the journey has taught me the importance of:
-
-1. **Serverless-first thinking** for cost-effective, scalable applications
-2. **Documentation as code** for maintainability and knowledge transfer
-3. **Early and continuous testing** to prevent last-minute surprises
-4. **Team collaboration** as the key to successful project delivery
-
-I am grateful to the FCJ mentors, AWS Solution Architects, and my Team NeuraX colleagues for making this experience unforgettable. This is not the end, but the beginning of my cloud journey! ☁️🚀
+* Successfully spun up backend on AWS ECS Fargate ensuring top-level corporate environment compliance.
+* Dramatically reduced operational costs manually enforcing Fargate Spot capability limits across scaling containers.
+* Addressed critical bug fixes regarding ECS Network identification strings alongside tricky IAM permissions around S3 caching prefix collisions.
+* Orchestrated stable asynchronous concurrency operations in the background, utilizing ThreadPool and queue configurations, eliminating UI/API timeouts when users submit massively loaded images.
+* Locked down core application APIs implementing JWT token validations, comprehensively securing the architecture ahead of strict production release checks.

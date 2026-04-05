@@ -1,56 +1,21 @@
-### Week 8 Objectives
+### Week 8 Objectives:
 
-* Complete all frontend pages and components.
-* Implement image upload and meal photo analysis.
-* Integrate frontend with all backend APIs.
-* Begin unit testing for Lambda functions.
+* Construct an interactive User Interface (Gradio) for demonstrations.
+* Mature the LLM infrastructure with strict "Tool Calling" logic to allow multiple food calculation in a single API pass.
 
-### Tasks carried out this week
+### Tasks to be carried out this week:
+| Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - First major Repository synchronization (Init project commits) <br> - Construct the `.env` handling structure | 23/02/2026   | 23/02/2026      | Github Commit History |
+| 3   | - Support multiple food identification within a single image context <br> - Resolve calculations when NO items versus MULTIPLE items are found | 24/02/2026   | 24/02/2026      |
+| 4   | - Construct robust Tool Calling features so LLM outputs strict JSON instead of plain conversational text <br> - Begin metrics tracking on pricing and token counts | 25/02/2026   | 25/02/2026      |
+| 5   | - Pass regression testing for local APIs with concurrent multiple objects <br> - Handle exceed bounds rounding for LLM outputs | 26/02/2026   | 26/02/2026      |
+| 6   | - Build a Gradio UI directly connecting backend endpoints <br> - Sync testing across Jupyter Notebooks (`test_all.ipynb`) and Web UI | 27/02/2026   | 27/02/2026      | Gradio Library Docs |
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --- | --- | --- | --- |
-| 1 | - Dashboard Page <br>&emsp; + Created main dashboard layout <br>&emsp; + Implemented daily calorie tracker widget <br>&emsp; + Added macro breakdown charts | 23/02/2026 | 23/02/2026 | [Dashboard UI] |
-| 2 | - Meal Logging UI <br>&emsp; + Created meal entry form <br>&emsp; + Implemented image upload component <br>&emsp; + Added food search autocomplete | 24/02/2026 | 24/02/2026 | [Meal Log UI] |
-| 3 | - Image Analysis Feature <br>&emsp; + Integrated Bedrock for meal photo analysis <br>&emsp; + Created image preview with nutrition overlay <br>&emsp; + Handled edge cases (no food detected) | 25/02/2026 | 25/02/2026 | [AI Features] |
-| 4 | - Analytics Page <br>&emsp; + Built weekly/monthly nutrition trends <br>&emsp; + Created calorie history charts <br>&emsp; + Added goal progress indicators | 26/02/2026 | 26/02/2026 | [Analytics UI] |
-| 5 | - API Integration <br>&emsp; + Connected all frontend components to backend <br>&emsp; + Implemented proper loading states <br>&emsp; + Added error handling and retry logic | 27/02/2026 | 27/02/2026 | [Integration Tests] |
-| 6-7 | - Unit Testing <br>&emsp; + Wrote unit tests for Lambda functions <br>&emsp; + Achieved 75% code coverage <br>&emsp; + Fixed bugs discovered during testing | 28/02/2026 | 01/03/2026 | [Test Reports] |
+### Week 8 Achievements:
 
-### Week 8 Achievements
-
-* **Frontend Pages:**
-  * ✅ Dashboard with real-time nutrition tracking.
-  * ✅ Meal logging with image upload.
-  * ✅ Analytics with weekly/monthly trends.
-  * ✅ Settings and profile pages.
-
-* **AI Features:**
-  * Meal photo analysis working with 85%+ accuracy.
-  * Nutrition suggestions based on user goals.
-  * Smart food search with local Vietnamese dishes.
-
-* **Testing:**
-  * 75% unit test coverage for Lambda functions.
-  * Integration tests for critical user flows.
-  * 12 bugs fixed during testing phase.
-
-### Challenges & Lessons
-
-* **Challenges:**
-  * Image analysis sometimes misidentified Vietnamese dishes.
-  * Large image uploads caused timeout issues.
-
-* **Solutions:**
-  * Added Vietnamese food examples to Bedrock prompt.
-  * Implemented image compression before upload (max 1MB).
-
-* **Lessons Learned:**
-  * Prompt engineering is crucial for locale-specific accuracy.
-  * Client-side validation prevents backend issues.
-
-### Next Week Plan
-
-* Complete end-to-end testing for all user flows.
-* Set up CloudWatch monitoring and alarms.
-* Implement performance optimizations.
-* Fix remaining bugs and polish UI.
+* Synchronized early project files officially into Git tracking, ensuring safe source code history.
+* Fully transitioned from conversational AI interaction to deterministic LLM Tool Calling; the system now explicitly formats nutrition calculations natively as JSON.
+* Solved the multi-object limitation, empowering the pipeline to recognize and calculate totals for multiple distinct food items in a single user picture.
+* Rolled out a functional frontend dashboard via Gradio, dramatically improving testing speed and visualizing end-to-end user workflow without using Postman.
+* Handled edge cases natively, such as when an image has ZERO recognizable food items or files hitting byte-size restrictions.
